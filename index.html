@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Seminar</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .section.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Seminar</a></li>
+                <li><a href="#about">Jurusan</a></li>
+                <li><a href="#speakers">Pembicara</a></li>
+                <li><a href="#schedule">Lomba</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <h1>Seminar Kimia(tema)</h1>
+        <h2>membahas tentang(sub tema)</h2>
+        <a href="https://icasmi.fmipa.unila.ac.id/#" class="button-home">Daftar Seminar</a>
+    </section>
+
+    <section id="about" class="section">
+        <h2>Jurusan</h2>
+        <p>Jurusan Kimia</p>
+    </section>
+
+    <section id="speakers" class="section">
+        <h2>Pembicara</h2>
+        <div class="speaker">
+            <img src="speaker1.jpeg" alt="Pembicara 1">
+            <h3>Dr. Haki</h3>
+            <p>Ahli Kimia</p>
+        </div>
+        <div class="speaker">
+            <img src="speaker2.jpeg" alt="Pembicara 2">
+            <h3>Dr. Asep</h3>
+            <p>Ahli Kimia</p>
+        </div>
+    </section>
+
+    <section id="schedule" class="section">
+        <h2>Lomba</h2>
+        <div class="lomba-container">
+            <p>Lomba makan kerupuk</p>
+            <p>Lomba balap karung</p>
+        </div>
+        <br>
+        <br>
+        <a href="https://icasmi.fmipa.unila.ac.id/#" class="button">Daftar Lomba</a>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+header {
+    background: #006A6A;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #333;
+}
+
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.lomba-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+}
+
+.lomba-container p {
+    width: 20%;
+    margin: 0;
+}
+
+
+.section.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#home {
+    background: #006A6A;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h2 {
+    font-size: 18px;
+}
+
+
+#about {
+    background: #fffcf6;
+    color: #333;
+    height: 50vh;
+}
+
+#speakers {
+    background: #fffcf6;
+    color: #333;
+    height: 70vh;
+}
+
+#schedule {
+    background: #fffcf6;
+    color: #333;
+    height: 100vh;
+}
+
+.speaker {
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+}
+
+.speaker img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.6);
+}
+
+.button {
+    background: #006A6A;
+    color: #c0acac;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #fffcf6;
+}
+
+.button-home {
+    margin-top: 20px;
+    background: #EFEEE5;
+    color: #090b0e;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.button-home:hover {
+    background: #006A6A;
+}
